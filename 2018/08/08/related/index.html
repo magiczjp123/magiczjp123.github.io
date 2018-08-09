@@ -34,7 +34,7 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     
     
-    <link rel="alternate" href="/atom.xml" title="Junpu's blog" type="application/atom+xml" />
+    <link rel="alternate" href="/atom.xml" title="Junpu's Blog" type="application/atom+xml" />
     
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
@@ -82,7 +82,7 @@
     <script defer type="text/javascript" src="/js/index.js"></script>
     
     <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>公司相关 | Junpu's blog</title>
+    <title>我的工作相关 | Junpu's Blog - 记录、分享 | For sharing and fun</title>
   </head>
   <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
     
@@ -90,8 +90,8 @@
   <div class="container">
     <div class="header-container">
       <div class="header-title">
-        <h1 class="title"><a href="/">Junpu's blog</a></h1>
-        <h2 class="subtitle"></h2>
+        <h1 class="title"><a href="/">Junpu's Blog</a></h1>
+        <h2 class="subtitle">记录、分享 | For sharing and fun</h2>
       </div>
       
       <div class="logo">
@@ -135,14 +135,14 @@
       <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
        <meta itemprop="name" content="Junpu">
        <meta itemprop="description" content="">
-       <meta itemprop="image" content="/images/avatar.png">
+       <meta itemprop="image" content="/images/avatar.jpg">
       </span>
       <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="Junpu's blog">
+       <meta itemprop="name" content="Junpu's Blog">
       </span>
     </div>
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">公司相关</h1>
+      <h1 class="post-title" itemprop="name headline">我的工作相关</h1>
       <div class="post-meta">
         
         <span class="post-date">
@@ -154,17 +154,20 @@
       </div>
     </header>
     <main class="post-main" itemprop="articleBody">
-      <h1 id="吉迈机器人资料汇总"><a href="#吉迈机器人资料汇总" class="headerlink" title="吉迈机器人资料汇总"></a>吉迈机器人资料汇总</h1><h2 id="布科思技术支持资料网站"><a href="#布科思技术支持资料网站" class="headerlink" title="布科思技术支持资料网站"></a><a href="http://www.boocax.com/col.jsp?id=104" title="资料" target="_blank" rel="noopener">布科思技术支持资料网站</a></h2><h2 id="机器人流程化配置方法（分步）"><a href="#机器人流程化配置方法（分步）" class="headerlink" title="机器人流程化配置方法（分步）"></a>机器人流程化配置方法（分步）</h2><a id="more"></a>
+      <h1 id="吉迈机器人资料汇总"><a href="#吉迈机器人资料汇总" class="headerlink" title="吉迈机器人资料汇总"></a>吉迈机器人资料汇总</h1><h2 id="北京布科思技术支持资料网站"><a href="#北京布科思技术支持资料网站" class="headerlink" title="北京布科思技术支持资料网站"></a><a href="http://www.boocax.com/col.jsp?id=104" title="资料" target="_blank" rel="noopener">北京布科思技术支持资料网站</a></h2><h2 id="机器人流程化配置方法（分步）"><a href="#机器人流程化配置方法（分步）" class="headerlink" title="机器人流程化配置方法（分步）"></a>机器人流程化配置方法（分步）</h2><a id="more"></a>
 <h3 id="步骤1-配置网络"><a href="#步骤1-配置网络" class="headerlink" title="步骤1. 配置网络"></a>步骤1. 配置网络</h3><h4 id="布科思的主机出厂配置默认连接的WIFI网络是："><a href="#布科思的主机出厂配置默认连接的WIFI网络是：" class="headerlink" title="布科思的主机出厂配置默认连接的WIFI网络是："></a>布科思的主机出厂配置默认连接的WIFI网络是：</h4><blockquote>
-<p>网络名称：robot_test <br><br>网络密码：robot123</p>
+<p>网络名称：robot_test<br>网络密码：robot123</p>
 </blockquote>
 <h4 id="在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><a href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：" class="headerlink" title="在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："></a>在有这样设置的WIFI无线路由器的情况下会自动连接。<strong><em>如果需要设置成自动连接其他的WIFI网络</em></strong>，可以通过两种方法：</h4><ol>
-<li><p>通过ssh远程登录布科思主机修改，注意必须确保和布科思主机在同一个WIFI网络下。ssh命令<br> <code>ssh boocax@</code><del><code>192.168.1.144</code></del><br> <code>&#39;boocax@</code><del><code>192.168.1.144</code></del><code>&#39;s password:</code></p>
-<p> 替换划掉的部分为实际的局域网内布科思主机地址。ssh远程登录密码为robot123，这也是布科思主机的root密码。<br> 登录布科思主机后可以修改位于主目录下 <code>data</code> 目录的 <code>wlan.conf</code> 文件<br> <code>boocax@boocax-robot:~$ sudo nano data/wlan.conf</code></p>
-<p> 把 <code>ssid</code> 和 <code>password</code> 分别改为其他的网络名称和WIFI密码<br> <code>ssid=(网路名称)</code><br> <code>password=(WIFI密码)</code></p>
+<li><p>通过ssh远程登录布科思主机修改，注意必须确保和布科思主机在同一个WIFI网络下。ssh命令   </p>
+<p> <code>ssh boocax@</code><del><code>192.168.1.144</code></del><br> <code>boocax@</code><del><code>192.168.1.144</code></del><code>&#39;s password:</code></p>
+<p> 替换划掉的部分为实际的局域网内布科思主机地址。ssh远程登录密码为<code>robot123</code>，这也是布科思主机的<code>root</code>密码。<br> 登录布科思主机后可以修改位于主目录下<code>data</code>目录的<code>wlan.conf</code>文件 </p>
+<p> <code>boocax@boocax-robot:~$ sudo nano data/wlan.conf</code>   </p>
+<p> 把<code>ssid</code>和<code>password</code>分别改为其他的网络名称和WIFI密码    </p>
+<p> <code>ssid=(网路名称)</code><br> <code>password=(WIFI密码)</code>      </p>
 <p> 设置完WIFI后重启布科思就会自动连接新网络</p>
 </li>
-<li><p>用VGA视频传输线连接主机VGA输出到电脑屏幕。修改 <code>wlan.conf</code> 的方法同上。</p>
+<li><p>用VGA视频传输线连接主机VGA输出到电脑屏幕。修改<code>wlan.conf</code>的方法同上。</p>
 </li>
 </ol>
 
@@ -178,7 +181,7 @@
   <div class="post-nav">
     <div class="post-nav-next post-nav-item">
       
-      <a href="/2018/08/08/firs-post/" rel="next" title="firs-post"><i class="fas fa-angle-left"></i><span class="nav-title">firs-post</span></a>
+      <a href="/2018/08/08/firs-post/" rel="next" title="使用hexo部署在Github上部署静态网页总结"><i class="fas fa-angle-left"></i><span class="nav-title">使用hexo部署在Github上部署静态网页总结</span></a>
       
     </div>
     <div class="post-nav-prev post-nav-item">
@@ -205,7 +208,7 @@
   
 <div class="info sidebar-item" id="info">
   
-  <img class="author-avatar" src="/images/avatar.png" alt="Junpu">
+  <img class="author-avatar" src="/images/avatar.jpg" alt="Junpu">
   
   <h1 class="author-name">Junpu</h1>
   <h2 class="author-description"> </h2>
@@ -253,7 +256,7 @@
 <hr>
 <div class="post-toc sidebar-item" id="toc-div">
   <div><i class="fas fa-list-ol"></i>文章目录</div>
-  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#吉迈机器人资料汇总"><span class="toc-text">吉迈机器人资料汇总</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#布科思技术支持资料网站"><span class="toc-text">布科思技术支持资料网站</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#机器人流程化配置方法（分步）"><span class="toc-text">机器人流程化配置方法（分步）</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#步骤1-配置网络"><span class="toc-text">步骤1. 配置网络</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#布科思的主机出厂配置默认连接的WIFI网络是："><span class="toc-text">布科思的主机出厂配置默认连接的WIFI网络是：</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><span class="toc-text">在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：</span></a></li></ol></li></ol></li></ol></li></ol></div>
+  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#吉迈机器人资料汇总"><span class="toc-text">吉迈机器人资料汇总</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#北京布科思技术支持资料网站"><span class="toc-text">北京布科思技术支持资料网站</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#机器人流程化配置方法（分步）"><span class="toc-text">机器人流程化配置方法（分步）</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#步骤1-配置网络"><span class="toc-text">步骤1. 配置网络</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#布科思的主机出厂配置默认连接的WIFI网络是："><span class="toc-text">布科思的主机出厂配置默认连接的WIFI网络是：</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><span class="toc-text">在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：</span></a></li></ol></li></ol></li></ol></li></ol></div>
 </div>
 
 
