@@ -3,10 +3,10 @@
   
     
     <entry>
-      <title>我的工作相关</title>
-      <link href="/2018/08/08/related/"/>
-      <url>/2018/08/08/related/</url>
-      <content type="html"><![CDATA[<h1 id="吉迈机器人资料汇总"><a href="#吉迈机器人资料汇总" class="headerlink" title="吉迈机器人资料汇总"></a>吉迈机器人资料汇总</h1><h2 id="北京布科思技术支持资料网站"><a href="#北京布科思技术支持资料网站" class="headerlink" title="北京布科思技术支持资料网站"></a><a href="http://www.boocax.com/col.jsp?id=104" title="资料" target="_blank" rel="noopener">北京布科思技术支持资料网站</a></h2><h2 id="机器人流程化配置方法（分步）"><a href="#机器人流程化配置方法（分步）" class="headerlink" title="机器人流程化配置方法（分步）"></a>机器人流程化配置方法（分步）</h2><a id="more"></a><h3 id="配置网络"><a href="#配置网络" class="headerlink" title="配置网络"></a><strong>配置网络</strong></h3><h4 id="布科思的主机出厂配置默认连接的WIFI网络是："><a href="#布科思的主机出厂配置默认连接的WIFI网络是：" class="headerlink" title="布科思的主机出厂配置默认连接的WIFI网络是："></a>布科思的主机出厂配置默认连接的WIFI网络是：</h4><blockquote><p>网络名称：robot_test<br>网络密码：robot123</p></blockquote><h4 id="在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><a href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：" class="headerlink" title="在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："></a>在有这样设置的WIFI无线路由器的情况下会自动连接。<strong><em>如果需要设置成自动连接其他的WIFI网络</em></strong>，可以通过两种方法：</h4><ol><li><p>通过ssh远程登录布科思主机修改，注意必须确保和布科思主机在同一个WIFI网络下。ssh命令   </p><p> <code>ssh boocax@</code><del><code>192.168.1.144</code></del><br> <code>boocax@</code><del><code>192.168.1.144</code></del><code>&#39;s password:</code></p><p> 替换划掉的部分为实际的局域网内布科思主机地址。主机地址可以通过window客户端或者其他形式接收局域网内的UDP广播解析得到。ssh远程登录密码为<code>robot123</code>，这也是布科思主机的<code>root</code>密码。<br> 登录布科思主机后可以修改位于主目录下<code>data</code>目录的<code>wlan.conf</code>文件 </p><p> <code>boocax@boocax-robot:~$ sudo nano data/wlan.conf</code>   </p><p> 把<code>ssid</code>和<code>password</code>分别改为其他的网络名称和WIFI密码    </p><p> <code>ssid=(网路名称)</code><br> <code>password=(WIFI密码)</code>      </p><p> 设置完WIFI后重启布科思就会自动连接新网络</p></li><li><p>用VGA视频传输线连接主机VGA输出到电脑屏幕。修改<code>wlan.conf</code>的方法同上。</p></li></ol><h3 id="加载消毒程序"><a href="#加载消毒程序" class="headerlink" title="加载消毒程序"></a><strong>加载消毒程序</strong></h3><h4 id="在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："><a href="#在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：" class="headerlink" title="在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："></a>在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：</h4><ol><li><p>找到并打开布科思的<code>app.launch</code>文件：</p> <figure class="hljs highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">boocax@boocax-robot:~$ sudo nano roswork/src/boocax_base/launch/app.launch<br></code></pre></td></tr></table></figure><p> 在文档中加入以下：</p> <figure class="hljs highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- jm launch file  --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">node</span> <span class="hljs-attr">pkg</span>=<span class="hljs-string">"jm_operation"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"jm_disinfect.py"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"jm_disinfect"</span>/&gt;</span><br></code></pre></td></tr></table></figure><p> 这样布科思主机自启动文件就可以自动打开消毒程序了。</p></li><li><p>复制<code>jm_operation</code>文件夹至<code>roswork</code>下的<code>src</code>文件夹中。</p></li><li><p>重启主机，消毒程序随自启动运行。<code>rosnode list</code>可以看到<code>/jm_disinfect</code>的节点，即为消毒程序。</p></li></ol><h3 id="配置机器人运动参数"><a href="#配置机器人运动参数" class="headerlink" title="配置机器人运动参数"></a><strong>配置机器人运动参数</strong></h3><h4 id="参考布科思支持文档06配置手册"><a href="#参考布科思支持文档06配置手册" class="headerlink" title="参考布科思支持文档06配置手册"></a>参考布科思支持文档06配置手册</h4>]]></content>
+      <title></title>
+      <link href="/2018/08/20/related/"/>
+      <url>/2018/08/20/related/</url>
+      <content type="html"><![CDATA[]]></content>
       
       
     </entry>
@@ -31,16 +31,16 @@
     </entry>
     
     <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
