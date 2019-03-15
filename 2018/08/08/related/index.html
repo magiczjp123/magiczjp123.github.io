@@ -1,160 +1,342 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#33363b">
-    <meta name="msapplication-TileColor" content="#33363b">
-    
-    
-    
-    <meta name="keywords" content="Life, ARIA, Hexo">
-    
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    
-    
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    
-    
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
-    
-    
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    
-    
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    
-    
-    <link rel="alternate" href="/atom.xml" title="Junpu's Blog" type="application/atom+xml" />
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
-    
-    
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/index.css">
-    
-    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
-    
-    
-<link rel="stylesheet" type="text/css" href="/css/page.css">
-<link rel="stylesheet" type="text/css" href="/css/post.css">
 
-    <link rel="stylesheet" type="text/css" href="/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
-    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script defer type="text/javascript" src="/js/util.js"></script>
-    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
-    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
-    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
-    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Junpu's Blog" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="吉迈机器人资料汇总北京布科思技术支持资料网站机器人流程化配置方法（分步）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="工作相关">
+<meta property="og:url" content="http://yoursite.com/2018/08/08/related/index.html">
+<meta property="og:site_name" content="Junpu&#39;s Blog">
+<meta property="og:description" content="吉迈机器人资料汇总北京布科思技术支持资料网站机器人流程化配置方法（分步）">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-27T08:49:03.878Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="工作相关">
+<meta name="twitter:description" content="吉迈机器人资料汇总北京布科思技术支持资料网站机器人流程化配置方法（分步）">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/08/08/related/"/>
+
+
+
+
+
+  <title>工作相关 | Junpu's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
     
-    <script defer src="/js/busuanzi.pure.mini.js"></script>
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
     
-    
-    <script defer type="text/javascript" src="/js/search.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      var searchPath = "search.xml";
-      if (searchPath.length === 0) {
-        searchPath = "search.xml";
-      }
-      var path = "/" + searchPath;
-      searchFunc(path, "search-input", "search-result");
-    });
-    </script>
-    
-    
-    <script defer type="text/javascript" src="/js/index.js"></script>
-    
-    <script defer type="text/javascript" src="/js/custom.js"></script>
-    <title>工作相关 | Junpu's Blog - 记录、分享 | For sharing and fun</title>
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN"  data-spy="scroll" data-target=".list-group">
-    
-<header id="header" class="header" style="background: #33363b;">
-  <div class="container">
-    <div class="header-container">
-      <div class="header-title">
-        <h1 class="title"><a href="/">Junpu's Blog</a></h1>
-        <h2 class="subtitle">记录、分享 | For sharing and fun</h2>
-      </div>
-      
-      <div class="logo">
-        <img src="/images/ARIA_logo.png" alt="logo">
-      </div>
-      
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Junpu's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    
-<nav id="nav" class="nav">
-  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
-  <ul id="menu">
-    
-    <li><a href="/">首页</a></li>
-    
-    <li><a href="/archives/">归档</a></li>
-    
-    <li><a href="/categories/">分类</a></li>
-    
-    <li><a href="/tags/">标签</a></li>
-    
-    <li><a href="/about/">关于</a></li>
-    
-  </ul>
+      
+        <p class="site-subtitle">记录、分享 | For sharing and fun</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
 
 
-  </div>
-</header>
 
+ </div>
+    </header>
 
     <main id="main" class="main">
-      <div class="container">
-        <div class="main-container">
-          <div class="content">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
             
-<div id="post" class="post">
+
+  <div id="posts" class="posts-expand">
+    
+
   
-  <article class="post-article card" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/08/related/">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-       <meta itemprop="name" content="Junpu">
-       <meta itemprop="description" content="">
-       <meta itemprop="image" content="/images/avatar.jpg">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="Junpu's Blog">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">工作相关</h1>
-      <div class="post-meta">
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/08/related/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Junpu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Junpu's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-08T14:57:54+08:00">2018-08-08 14:57:54</time></span>
-        </span>
         
+          <h1 class="post-title" itemprop="name headline">工作相关</h1>
         
-        
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      <h1 id="吉迈机器人资料汇总"><a href="#吉迈机器人资料汇总" class="headerlink" title="吉迈机器人资料汇总"></a>吉迈机器人资料汇总</h1><h2 id="北京布科思技术支持资料网站"><a href="#北京布科思技术支持资料网站" class="headerlink" title="北京布科思技术支持资料网站"></a><a href="http://www.boocax.com/col.jsp?id=104" title="资料" target="_blank" rel="noopener">北京布科思技术支持资料网站</a></h2><h2 id="机器人流程化配置方法（分步）"><a href="#机器人流程化配置方法（分步）" class="headerlink" title="机器人流程化配置方法（分步）"></a>机器人流程化配置方法（分步）</h2><a id="more"></a>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-08T14:57:54+08:00">
+                2018-08-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="吉迈机器人资料汇总"><a href="#吉迈机器人资料汇总" class="headerlink" title="吉迈机器人资料汇总"></a>吉迈机器人资料汇总</h1><h2 id="北京布科思技术支持资料网站"><a href="#北京布科思技术支持资料网站" class="headerlink" title="北京布科思技术支持资料网站"></a><a href="http://www.boocax.com/col.jsp?id=104" title="资料" target="_blank" rel="noopener">北京布科思技术支持资料网站</a></h2><h2 id="机器人流程化配置方法（分步）"><a href="#机器人流程化配置方法（分步）" class="headerlink" title="机器人流程化配置方法（分步）"></a>机器人流程化配置方法（分步）</h2><a id="more"></a>
 <h3 id="配置网络"><a href="#配置网络" class="headerlink" title="配置网络"></a><strong>配置网络</strong></h3><h4 id="布科思的主机出厂配置默认连接的WIFI网络是："><a href="#布科思的主机出厂配置默认连接的WIFI网络是：" class="headerlink" title="布科思的主机出厂配置默认连接的WIFI网络是："></a>布科思的主机出厂配置默认连接的WIFI网络是：</h4><blockquote>
 <p>网络名称：robot_test<br>网络密码：robot123</p>
 </blockquote>
@@ -172,9 +354,9 @@
 </ol>
 <h3 id="加载消毒程序"><a href="#加载消毒程序" class="headerlink" title="加载消毒程序"></a><strong>加载消毒程序</strong></h3><h4 id="在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："><a href="#在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：" class="headerlink" title="在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："></a>在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：</h4><ol>
 <li><p>找到并打开布科思的<code>app.launch</code>文件：</p>
- <figure class="hljs highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">boocax@boocax-robot:~$ sudo nano roswork/src/boocax_base/launch/app.launch<br></code></pre></td></tr></table></figure>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">boocax@boocax-robot:~$ sudo nano roswork/src/boocax_base/launch/app.launch<br></code></pre></td></tr></table></figure>
 <p> 在文档中加入以下：</p>
- <figure class="hljs highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- jm launch file  --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">node</span> <span class="hljs-attr">pkg</span>=<span class="hljs-string">"jm_operation"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"jm_disinfect.py"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"jm_disinfect"</span>/&gt;</span><br></code></pre></td></tr></table></figure>
+ <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- jm launch file  --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">node</span> <span class="hljs-attr">pkg</span>=<span class="hljs-string">"jm_operation"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"jm_disinfect.py"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"jm_disinfect"</span>/&gt;</span><br></code></pre></td></tr></table></figure>
 <p> 这样布科思主机自启动文件就可以自动打开消毒程序了。</p>
 </li>
 <li><p>复制<code>jm_operation</code>文件夹至<code>roswork</code>下的<code>src</code>文件夹中。</p>
@@ -182,176 +364,391 @@
 <li><p>重启主机，消毒程序随自启动运行。<code>rosnode list</code>可以看到<code>/jm_disinfect</code>的节点，即为消毒程序。</p>
 </li>
 </ol>
-<h3 id="配置机器人运动参数"><a href="#配置机器人运动参数" class="headerlink" title="配置机器人运动参数"></a><strong>配置机器人运动参数</strong></h3><h4 id="参考布科思支持文档06配置手册"><a href="#参考布科思支持文档06配置手册" class="headerlink" title="参考布科思支持文档06配置手册"></a>参考布科思支持文档06配置手册</h4><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># config</span><br>have_visual = 1<br><span class="hljs-comment"># server_ip = 192.168.0.37</span><br><br><span class="hljs-comment"># UWB</span><br>uwb_port = /dev/ttyS3<br>uwb_baudrate = 9600<br>uwb_x_pos = 0.0<br>uwb_y_pos = 0.0<br><span class="hljs-comment">#uwb_tag = 46 1 1</span><br><br><span class="hljs-comment"># 运动底盘</span><br>base_baudrate = 9600<br>base_port = /dev/ttyS2<br>base_link_format = 4<br><br><span class="hljs-comment"># APP</span><br>send_custom_to_app = 1<br>send_custom_to_base = 1<br>app_use_serial = 1<br>app_baudrate = 9600<br>app_port = /dev/ttyS0<br><br><span class="hljs-comment"># 里程计</span><br>have_odom = 1<br><br><span class="hljs-comment"># 激光</span><br><span class="hljs-comment"># 激光相对于机器人中心的坐标变换，前三位分别表示 x，y，z 轴的偏移量，单位米，后三位 表示角度变换 roll，pitch，yaw，单位弧度</span><br>laser_tf = 0.215, 0, 0.30, 0, 0, 0<br>scan_filtered = 1<br><br><span class="hljs-comment"># 机器人轮廓</span><br><span class="hljs-comment"># 圆形机器人设置robot_radius和pole_distance，非圆形机器人设置footprint</span><br><span class="hljs-comment">#robot_radius = 0.25</span><br><span class="hljs-comment">#pole_distance = 0.3</span><br>footprint = [[0.225,-0.18],[0.225,0.18],[-0.225,0.18],[-0.225,-0.18]]<br><span class="hljs-comment">#footprint = [[0.265,-0.18],[0.265,0.18],[-0.265,0.18],[-0.265,-0.18]]</span><br><br><span class="hljs-comment">#feasibility_check_dist = 0.6</span><br><br><span class="hljs-comment">#轮轴距，轮半径，电机减速比</span><br>width_wheel = 0.295<br>radius_wheel = 0.084<br>reduction_gear_ratio = 0.5<br><br><span class="hljs-comment"># 超声波</span><br>have_sonar = 0<br>sonar_fliter = 0<br>sonar_zero_inver = 2.0<br><span class="hljs-comment">#sonar data: 安装角度(度数)，安装距离(米)，最小距离(米)，最大距离(米)，视角（度数），朝向角度（度数）</span><br>sonar3 = 337.5,0.249,0.01,0.45,15,0<br>sonar1 = 22.5,0.249,0.01,0.45,15,0<br>sonar2 = 0,0.15,0.01,0.45,15,0<br><br><span class="hljs-comment"># 全局路径搜索参数设置</span><br>inflation = 0.4<br>inflation_weight = 1.5<br><br><span class="hljs-comment"># 导航参数，不建议修改</span><br>map_publish_frequency = 0<br><span class="hljs-comment">#local_window = 4</span><br><span class="hljs-comment">#control_frequency = 10</span><br><span class="hljs-comment">#map_update_frequency = 5</span><br><span class="hljs-comment">#safe_cmd_dist = 0.15</span><br><span class="hljs-comment">#search_goal_tolerance = 0.0</span><br><span class="hljs-comment">#search_path_tolerance = 0.0</span><br><span class="hljs-comment">#path_search_patience = 0.0</span><br>allow_cancel_patience = 60<br>report_cancel_patience = 30<br><br>ui_laser_timer = 2.0<br>ui_uwb_timer = 0.2<br>ui_sonar_timer = 0.2<br><span class="hljs-comment">#auto_poweron_time = 0</span><br>poweroff_delay_time = 20<br></code></pre></td></tr></table></figure>
-    </main>
+<h3 id="配置机器人运动参数"><a href="#配置机器人运动参数" class="headerlink" title="配置机器人运动参数"></a><strong>配置机器人运动参数</strong></h3><h4 id="参考布科思支持文档06配置手册"><a href="#参考布科思支持文档06配置手册" class="headerlink" title="参考布科思支持文档06配置手册"></a>参考布科思支持文档06配置手册</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># config</span><br>have_visual = 1<br><span class="hljs-comment"># server_ip = 192.168.0.37</span><br><br><span class="hljs-comment"># UWB</span><br>uwb_port = /dev/ttyS3<br>uwb_baudrate = 9600<br>uwb_x_pos = 0.0<br>uwb_y_pos = 0.0<br><span class="hljs-comment"># uwb_tag = 46 1 1</span><br><br><span class="hljs-comment"># 运动底盘</span><br>base_baudrate = 9600<br>base_port = /dev/ttyS2<br>base_link_format = 4<br><br><span class="hljs-comment"># APP</span><br>send_custom_to_app = 1<br>send_custom_to_base = 1<br>app_use_serial = 1<br>app_baudrate = 9600<br>app_port = /dev/ttyS0<br><br><span class="hljs-comment"># 里程计</span><br>have_odom = 1<br><br><span class="hljs-comment"># 激光</span><br><span class="hljs-comment"># 激光相对于机器人中心的坐标变换，前三位分别表示 x，y，z 轴的偏移量，单位米，后三位 表示角度变换 roll，pitch，yaw，单位弧度</span><br>laser_tf = 0.215, 0, 0.30, 0, 0, 0<br>scan_filtered = 1<br><br><span class="hljs-comment"># 机器人轮廓</span><br><span class="hljs-comment"># 圆形机器人设置robot_radius和pole_distance，非圆形机器人设置footprint</span><br><span class="hljs-comment">#robot_radius = 0.25</span><br><span class="hljs-comment">#pole_distance = 0.3</span><br>footprint = [[0.225,-0.18],[0.225,0.18],[-0.225,0.18],[-0.225,-0.18]]<br><span class="hljs-comment">#footprint = [[0.265,-0.18],[0.265,0.18],[-0.265,0.18],[-0.265,-0.18]]</span><br><br><span class="hljs-comment">#feasibility_check_dist = 0.6</span><br><br><span class="hljs-comment">#轮轴距，轮半径，电机减速比</span><br>width_wheel = 0.295<br>radius_wheel = 0.084<br>reduction_gear_ratio = 0.5<br><br><span class="hljs-comment"># 超声波</span><br>have_sonar = 0<br>sonar_fliter = 0<br>sonar_zero_inver = 2.0<br><span class="hljs-comment">#sonar data: 安装角度(度数)，安装距离(米)，最小距离(米)，最大距离(米)，视角（度数），朝向角度（度数）</span><br>sonar3 = 337.5,0.249,0.01,0.45,15,0<br>sonar1 = 22.5,0.249,0.01,0.45,15,0<br>sonar2 = 0,0.15,0.01,0.45,15,0<br><br><span class="hljs-comment"># 全局路径搜索参数设置</span><br>inflation = 0.4<br>inflation_weight = 1.5<br><br><span class="hljs-comment"># 导航参数，不建议修改</span><br>map_publish_frequency = 0<br><span class="hljs-comment">#local_window = 4</span><br><span class="hljs-comment">#control_frequency = 10</span><br><span class="hljs-comment">#map_update_frequency = 5</span><br><span class="hljs-comment">#safe_cmd_dist = 0.15</span><br><span class="hljs-comment">#search_goal_tolerance = 0.0</span><br><span class="hljs-comment">#search_path_tolerance = 0.0</span><br><span class="hljs-comment">#path_search_patience = 0.0</span><br>allow_cancel_patience = 60<br>report_cancel_patience = 30<br><br>ui_laser_timer = 2.0<br>ui_uwb_timer = 0.2<br>ui_sonar_timer = 0.2<br><span class="hljs-comment">#auto_poweron_time = 0</span><br>poweroff_delay_time = 20<br></code></pre></td></tr></table></figure>
+<h2 id="机器人总结"><a href="#机器人总结" class="headerlink" title="机器人总结"></a><strong>机器人总结</strong></h2><h3 id="问题总结："><a href="#问题总结：" class="headerlink" title="问题总结："></a>问题总结：</h3><ol>
+<li>机器人导航使用的深度相机面对墙壁丢帧，影响导航性能</li>
+<li>机器人的相对位置link设置基于运动中心</li>
+<li>导航通过窄道边缘转弯容易擦碰</li>
+<li>导航正前方有障碍物会导航失败</li>
+<li>确认摄像头型号</li>
+</ol>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
     <footer class="post-footer">
       
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/08/firs-post/" rel="next" title="使用hexo部署在Github上部署静态网页总结">
+                <i class="fa fa-chevron-left"></i> 使用hexo部署在Github上部署静态网页总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
     </footer>
-  </article>
-  
-  
-  <div class="post-nav">
-    <div class="post-nav-next post-nav-item">
-      
-      <a href="/2018/08/08/firs-post/" rel="next" title="使用hexo部署在Github上部署静态网页总结"><i class="fas fa-angle-left"></i><span class="nav-title">使用hexo部署在Github上部署静态网页总结</span></a>
-      
-    </div>
-    <div class="post-nav-prev post-nav-item">
-      
-    </div>
   </div>
   
   
-</div>
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
 
           </div>
           
-          
-          
-<aside class="sidebar" id="sidebar" style="background: url(/images/sidebar_background.png);">
-  
-  <div class="search">
-    <div class="form-group">
-      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control"/>
-    </div>
-  </div>
-  <div class="search-result-box" id="search-result"></div>
-  
-  
-<div class="info sidebar-item" id="info">
-  
-  <img class="author-avatar" src="/images/avatar.jpg" alt="Junpu">
-  
-  <h1 class="author-name">Junpu</h1>
-  <h2 class="author-description"> </h2>
-  <div class="site-count">
-    
-    <div class="archives-count">
-      <div class="site-count-title">归档</div>
-      <div><a href="/archives/">2</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="categories-count">
-      <div class="site-count-title">分类</div>
-      <div><a href="/categories/">0</a></div>
-    </div>
-    
-    
-    
-    <span class="site-count-divider divider">|</span>
-    
-    <div class="tags-count">
-      <div class="site-count-title">标签</div>
-      <div><a href="/tags/">0</a></div>
-    </div>
-    
-  </div>
-  
-  <div class="rss">
-    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
-  </div>
-  
-</div>
-
-
-  <div class="sidebar-sticky">
-    
-    
-
-
-
-
-<hr>
-<div class="post-toc sidebar-item" id="toc-div">
-  <div><i class="fas fa-list-ol"></i>文章目录</div>
-  <div class="post-toc-content"><ol class="list-group toc"><li class="toc-item toc-level-1"><a class="list-group-item toc-link" href="#吉迈机器人资料汇总"><span class="toc-text">吉迈机器人资料汇总</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#北京布科思技术支持资料网站"><span class="toc-text">北京布科思技术支持资料网站</span></a></li><li class="toc-item toc-level-2"><a class="list-group-item toc-link" href="#机器人流程化配置方法（分步）"><span class="toc-text">机器人流程化配置方法（分步）</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#配置网络"><span class="toc-text">配置网络</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#布科思的主机出厂配置默认连接的WIFI网络是："><span class="toc-text">布科思的主机出厂配置默认连接的WIFI网络是：</span></a></li><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><span class="toc-text">在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#加载消毒程序"><span class="toc-text">加载消毒程序</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："><span class="toc-text">在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="list-group-item toc-link" href="#配置机器人运动参数"><span class="toc-text">配置机器人运动参数</span></a><ol class="list-group toc-child"><li class="toc-item toc-level-4"><a class="list-group-item toc-link" href="#参考布科思支持文档06配置手册"><span class="toc-text">参考布科思支持文档06配置手册</span></a></li></ol></li></ol></li></ol></li></ol></div>
-</div>
-
-
-
-    
-    
-    
-<hr>
-<div class="social-link sidebar-item">
-  <div><i class="far fa-address-card"></i>社交链接</p></div>
-  <ul>
-    
-    <li><i class="fas fa-envelope"></i><a href="mailto:youremail@youremailhost" target="_blank">E-Mail</a></li>
-    
-    <li><i class="fab fa-github"></i><a href="https://github.com/" target="_blank">GitHub</a></li>
-    
-    <li><i class="fab fa-weibo"></i><a href="https://weibo.com/" target="_blank">Weibo</a></li>
-    
-  </ul>
-</div>
-
-
-    
-    
-    
-<hr>
-<div class="blogroll sidebar-item">
-  <div><i class="fas fa-link"></i>友情链接</div>
-  <ul>
-    
-    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
-    
-    <li><a href="https://developer.mozilla.org/" target="_blank">MDN</a></li>
-    
-    <li><a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a></li>
-    
-  </ul>
-</div>
-
-
-    
-  </div>
-</aside>
 
 
           
+
+  
+
+
+
         </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Junpu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#吉迈机器人资料汇总"><span class="nav-number">1.</span> <span class="nav-text">吉迈机器人资料汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#北京布科思技术支持资料网站"><span class="nav-number">1.1.</span> <span class="nav-text">北京布科思技术支持资料网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器人流程化配置方法（分步）"><span class="nav-number">1.2.</span> <span class="nav-text">机器人流程化配置方法（分步）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置网络"><span class="nav-number">1.2.1.</span> <span class="nav-text">配置网络</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#布科思的主机出厂配置默认连接的WIFI网络是："><span class="nav-number">1.2.1.1.</span> <span class="nav-text">布科思的主机出厂配置默认连接的WIFI网络是：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法："><span class="nav-number">1.2.1.2.</span> <span class="nav-text">在有这样设置的WIFI无线路由器的情况下会自动连接。如果需要设置成自动连接其他的WIFI网络，可以通过两种方法：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加载消毒程序"><span class="nav-number">1.2.2.</span> <span class="nav-text">加载消毒程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#在布科思主机上需要新增额外的消毒程序ROS包。分下面几步："><span class="nav-number">1.2.2.1.</span> <span class="nav-text">在布科思主机上需要新增额外的消毒程序ROS包。分下面几步：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置机器人运动参数"><span class="nav-number">1.2.3.</span> <span class="nav-text">配置机器人运动参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参考布科思支持文档06配置手册"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">参考布科思支持文档06配置手册</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器人总结"><span class="nav-number">1.3.</span> <span class="nav-text">机器人总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题总结："><span class="nav-number">1.3.1.</span> <span class="nav-text">问题总结：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
       </div>
     </main>
-    
-<footer id="footer" class="footer" style="background: #33363b;">
-  <div class="container">
-    <div class="back-to-top">
-      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
-    </div>
-    <div class="footer-container">
-      <div class="footer-left">
-        <div class="copyright">
-          <span class="author">Junpu</span><span class="year"><i class="far fa-copyright"></i>2018</span>
-        </div>
-        
-        
-<div class="busuanzi">
-  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv"></span></span>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Junpu</span>
+
+  
 </div>
 
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
         
       </div>
-      <div class="footer-right">
-        <div class="custom-info">
-          
-          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
-          
-        </div>
-        <div class="powered-by">
-          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
-        </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
       </div>
-    </div>
+    
+
+    
+
   </div>
-</footer>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
 
 
-  </body>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
 </html>
