@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-08-27T08:49:03.878Z</updated>
+  <updated>2019-03-18T03:49:36.574Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,34 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>工作相关</title>
+    <title>记录工作</title>
     <link href="http://yoursite.com/2018/08/08/related/"/>
     <id>http://yoursite.com/2018/08/08/related/</id>
     <published>2018-08-08T06:57:54.000Z</published>
-    <updated>2018-08-27T08:49:03.878Z</updated>
+    <updated>2019-03-18T03:49:36.574Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;吉迈机器人资料汇总&quot;&gt;&lt;a href=&quot;#吉迈机器人资料汇总&quot; class=&quot;headerlink&quot; title=&quot;吉迈机器人资料汇总&quot;&gt;&lt;/a&gt;吉迈机器人资料汇总&lt;/h1&gt;&lt;h2 id=&quot;北京布科思技术支持资料网站&quot;&gt;&lt;a href=&quot;#北京布科思技术支持资料网站&quot; class=&quot;headerlink&quot; title=&quot;北京布科思技术支持资料网站&quot;&gt;&lt;/a&gt;&lt;a href=&quot;http://www.boocax.com/col.jsp?id=104&quot; title=&quot;资料&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;北京布科思技术支持资料网站&lt;/a&gt;&lt;/h2&gt;&lt;h2 id=&quot;机器人流程化配置方法（分步）&quot;&gt;&lt;a href=&quot;#机器人流程化配置方法（分步）&quot; class=&quot;headerlink&quot; title=&quot;机器人流程化配置方法（分步）&quot;&gt;&lt;/a&gt;机器人流程化配置方法（分步）&lt;/h2&gt;
+      &lt;p&gt;吉迈机器人资料汇总&lt;br&gt;&lt;a href=&quot;http://www.boocax.com/col.jsp?id=104&quot; title=&quot;资料&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;北京布科思技术支持资料网站&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
+    
+      <category term="工作" scheme="http://yoursite.com/tags/%E5%B7%A5%E4%BD%9C/"/>
     
   </entry>
   
   <entry>
     <title>使用hexo部署在Github上部署静态网页总结</title>
-    <link href="http://yoursite.com/2018/08/08/firs-post/"/>
-    <id>http://yoursite.com/2018/08/08/firs-post/</id>
+    <link href="http://yoursite.com/2018/08/08/first-post/"/>
+    <id>http://yoursite.com/2018/08/08/first-post/</id>
     <published>2018-08-08T06:42:28.000Z</published>
-    <updated>2018-08-10T02:43:52.029Z</updated>
+    <updated>2019-03-18T04:05:25.088Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;这篇文章主要记录下使用hexo在Github上部署静态网页的过程&quot;&gt;&lt;a href=&quot;#这篇文章主要记录下使用hexo在Github上部署静态网页的过程&quot; class=&quot;headerlink&quot; title=&quot;这篇文章主要记录下使用hexo在Github上部署静态网页的过程&quot;&gt;&lt;/a&gt;这篇文章主要记录下使用hexo在Github上部署静态网页的过程&lt;/h1&gt;&lt;h2 id=&quot;第一步、在自己的Github网站上建立新的repo、命名为username-github-io，这样就可以访问这个地址，发现已经是托管于Github的网页了。&quot;&gt;&lt;a href=&quot;#第一步、在自己的Github网站上建立新的repo、命名为username-github-io，这样就可以访问这个地址，发现已经是托管于Github的网页了。&quot; class=&quot;headerlink&quot; title=&quot;第一步、在自己的Github网站上建立新的repo、命名为username.github.io，这样就可以访问这个地址，发现已经是托管于Github的网页了。&quot;&gt;&lt;/a&gt;第一步、在自己的Github网站上建立新的repo、命名为&lt;code&gt;username.github.io&lt;/code&gt;，这样就可以访问这个地址，发现已经是托管于Github的网页了。&lt;/h2&gt;
+      &lt;p&gt; 这篇文章主要记录下使用hexo在Github上部署静态网页的过程&lt;br&gt;
     
     </summary>
     
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
