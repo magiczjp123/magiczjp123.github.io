@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-18T08:24:00.862Z</updated>
+  <updated>2019-03-18T08:55:25.259Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,11 +21,12 @@
     <link href="http://yoursite.com/2019/03/18/construction/"/>
     <id>http://yoursite.com/2019/03/18/construction/</id>
     <published>2019-03-18T07:18:44.000Z</published>
-    <updated>2019-03-18T08:24:00.862Z</updated>
+    <updated>2019-03-18T08:55:25.259Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;data:image/jpeg;base64,IyEvdXNyL2Jpbi9lbnYgcHl0aG9uCiMgLSotIGNvZGluZzogdXRmLTggLSotCmltcG9ydCBiYXNlNjQKaW1wb3J0IHN5cwoKcGF0aCA9IHN5cy5hcmd2WzBdCgp3aXRoIG9wZW4ocGF0aCwgJ3JiJykgYXMgZjoKICAgIGJhc2U2NF9zdHJpbmcgPSBiYXNlNjQuYjY0ZW5jb2RlKGYucmVhZCgpKQpwcmludChiYXNlNjRfc3RyaW5nKQp3aXRoIG9wZW4oJ2ltYWdlX2Jhc2U2NC50eHQnLCAidyIpIGFzIGY6CiAgICBmLndyaXRlKHN0cihiYXNlNjRfc3RyaW5nKSkK&quot; alt=&quot;under_construction&quot;&gt;&lt;br&gt;
+      &lt;!-- ![under_construction](https://github.com/magiczjp123/my_blog/raw/master/construction/under_construction.jpg) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/magiczjp123/my_blog/raw/master/construction/under_construction.jpg&quot; width=&quot;400&quot; hegiht=&quot;240&quot; align=&quot;center&quot;&gt;&lt;br&gt;
     
     </summary>
     
