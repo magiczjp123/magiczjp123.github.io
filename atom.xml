@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-20T06:43:49.787Z</updated>
+  <updated>2019-03-20T10:15:25.596Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fluent Python学习笔记（一）</title>
+    <link href="http://yoursite.com/2019/03/20/fluent_python_note/"/>
+    <id>http://yoursite.com/2019/03/20/fluent_python_note/</id>
+    <published>2019-03-20T06:52:33.000Z</published>
+    <updated>2019-03-20T10:15:25.596Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Fluent-Python-第一章学习笔记&quot;&gt;&lt;a href=&quot;#Fluent-Python-第一章学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Fluent Python 第一章学习笔记&quot;&gt;&lt;/a&gt;Fluent Python 第一章学习笔记&lt;/h3&gt;&lt;p&gt;从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>博客施工中---</title>
@@ -58,7 +76,7 @@
     <link href="http://yoursite.com/2018/08/08/first-post/"/>
     <id>http://yoursite.com/2018/08/08/first-post/</id>
     <published>2018-08-08T06:42:28.000Z</published>
-    <updated>2019-03-18T04:05:25.088Z</updated>
+    <updated>2019-03-20T06:50:18.408Z</updated>
     
     <summary type="html">
     
@@ -67,7 +85,7 @@
     </summary>
     
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
