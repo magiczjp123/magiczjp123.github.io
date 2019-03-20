@@ -3,10 +3,10 @@
   
     
     <entry>
-      <title>博客建设中---</title>
+      <title>博客施工中---</title>
       <link href="/2019/03/18/construction/"/>
       <url>/2019/03/18/construction/</url>
-      <content type="html"><![CDATA[<!-- ![under_construction](https://github.com/magiczjp123/my_blog/raw/master/construction/under_construction.jpg) --><p><img src="https://github.com/magiczjp123/my_blog_imgs/raw/master/construction/under_construction.jpg" width="400" hegiht="240" align="center"><br><a id="more"></a><br>博客建设中—</p>]]></content>
+      <content type="html"><![CDATA[<!-- ![under_construction](https://github.com/magiczjp123/my_blog/raw/master/construction/under_construction.jpg) --><p><img src="https://github.com/magiczjp123/my_blog_imgs/raw/master/construction/under_construction.jpg" width="400" hegiht="240" align="center"><br><a id="more"></a><br>博客施工中—</p>]]></content>
       
       
         <tags>
@@ -52,13 +52,6 @@
     
     <entry>
       <title></title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
@@ -68,6 +61,13 @@
       <title></title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
