@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Junpu&#39;s Blog">
 <meta property="og:description" content="Fluent Python 第一章学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-20T10:15:25.596Z">
+<meta property="og:updated_time" content="2019-03-21T06:40:58.770Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fluent Python学习笔记（一）">
 <meta name="twitter:description" content="Fluent Python 第一章学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
@@ -381,12 +381,24 @@
                 
               
 
-              <time title="Created: 2019-03-20 14:52:33 / Modified: 18:15:25" itemprop="dateCreated datePublished" datetime="2019-03-20T14:52:33+08:00">2019-03-20</time>
+              <time title="Created: 2019-03-20 14:52:33" itemprop="dateCreated datePublished" datetime="2019-03-20T14:52:33+08:00">2019-03-20</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-03-21 14:40:58" itemprop="dateModified" datetime="2019-03-21T14:40:58+08:00">2019-03-21</time>
               
             
           </span>
@@ -440,43 +452,43 @@
 <tbody>
 <tr>
 <td>字符串/字节序列表示形式</td>
-<td><strong>repr</strong>、<strong>str</strong>、<strong>format</strong>、<strong>bytes</strong></td>
+<td><code>__repr__、__str__、__format__、__bytes__</code></td>
 </tr>
 <tr>
 <td>数值转换</td>
-<td><strong>abs</strong>、<strong>bool</strong>、<strong>complex</strong>、<strong>int</strong>、<strong>float</strong>、<strong>hash</strong>、<strong>index</strong></td>
+<td><code>__abs__、__bool__、__complex__、__int__、__float__、__hash__、__index__</code></td>
 </tr>
 <tr>
 <td>集合模拟</td>
-<td><strong>len</strong>、<strong>getitem</strong>、<strong>setitem</strong>、<strong>delitem</strong>、<strong>contains</strong></td>
+<td><code>__len__、__getitem__、__setitem__、__delitem__、__contains__</code></td>
 </tr>
 <tr>
 <td>迭代枚举</td>
-<td><strong>iter</strong>、<strong>reversed</strong>、<strong>next</strong></td>
+<td><code>__iter__、__reversed__、__next__</code></td>
 </tr>
 <tr>
 <td>可调用模拟</td>
-<td><strong>call</strong></td>
+<td><code>__call__</code></td>
 </tr>
 <tr>
 <td>上下文管理</td>
-<td><strong>enter</strong>、<strong>exit</strong></td>
+<td><code>__enter__、__exit__</code></td>
 </tr>
 <tr>
 <td>实例创建和销毁</td>
-<td><strong>new</strong>、<strong>init</strong>、<strong>del</strong></td>
+<td><code>__new__、__init__、__del__</code></td>
 </tr>
 <tr>
 <td>属性管理</td>
-<td><strong>getattr</strong>、<strong>getattribute</strong>、<strong>setattr</strong>、<strong>delattr</strong>、<strong>dir</strong></td>
+<td><code>__getattr__、__getattribute__、__setattr__、__delattr__、__dir__</code></td>
 </tr>
 <tr>
 <td>属性描述符</td>
-<td><strong>get</strong>、<strong>set</strong>、<strong>delete</strong></td>
+<td><code>__get__、__set__、__delete__</code></td>
 </tr>
 <tr>
 <td>跟类相关的服务</td>
-<td><strong>prepare</strong>、<strong>instancecheck</strong>、<strong>subclasscheck</strong></td>
+<td><code>__prepare__、__instancecheck__、__subclasscheck__</code></td>
 </tr>
 </tbody>
 </table>
@@ -491,36 +503,35 @@
 <tbody>
 <tr>
 <td>一元运算符</td>
-<td><strong>neg</strong> -、<strong>pos</strong> +、<strong>abs</strong> abs()</td>
+<td><code>__neg__ -、__pos__ +、__abs__ abs()</code></td>
 </tr>
 <tr>
 <td>众多比较运算符</td>
-<td><strong>lt</strong> &lt;、<strong>le</strong> &lt;=、<strong>eq</strong> ==、<strong>ne</strong> !=、<strong>gt</strong> &gt;、<strong>ge</strong> &gt;=</td>
+<td><code>__lt__ &lt;、__le__ &lt;=、__eq__ ==、__ne__ !=、__gt__ &gt;、__ge__ &gt;=</code></td>
 </tr>
 <tr>
 <td>算术运算符</td>
-<td><strong>add</strong> +、<strong>sub</strong> -、<strong>mul</strong> *、<strong>truediv</strong> /、<strong>floordiv</strong> //、<strong>mod</strong> %、<strong>divmod</strong> divmod()、<strong>pow</strong> ** 或pow()、<strong>round</strong> round()</td>
+<td><code>__add__ +、__sub__ -、__mul__ *、__truediv__ /、__floordiv__ //、__mod__ %、__divmod__ divmod()、__pow__ ** 或pow()、__round__ round()</code></td>
 </tr>
 <tr>
 <td>反向运算运算符</td>
-<td><strong>radd</strong>、<strong>rsub</strong>、<strong>rmul</strong>、<strong>rtruediv</strong>、<strong>rfloordiv</strong>、<strong>rmod</strong>、<strong>rdivmod</strong>、<strong>rpow</strong></td>
+<td><code>__radd__、__rsub__、__rmul__、__rtruediv__、__rfloordiv__、__rmod__、__rdivmod__、__rpow__</code></td>
 </tr>
 <tr>
 <td>增量赋值算术运算符</td>
-<td><strong>iadd</strong>、<strong>isub</strong>、<strong>imul</strong>、<strong>itruediv</strong>、<strong>ifloordiv</strong>、<strong>imod</strong>、__ipow</td>
+<td><code>__iadd__、__isub__、__imul__、__itruediv__、__ifloordiv__、__imod__、__ipow__</code></td>
 </tr>
 <tr>
 <td>位运算符</td>
-<td><strong>invert</strong> ~、<strong>lshift</strong> &lt;&lt;、<strong>rshift</strong> &gt;&gt;、<strong>and</strong> &amp;、<strong>or</strong></td>
-<td>、<strong>xor</strong> ^</td>
+<td><code>__invert__ ~、__lshift__ &lt;&lt;、__rshift__ &gt;&gt;、__and__ &amp;、__or__ 、__xor__ ^</code></td>
 </tr>
 <tr>
 <td>反向位运算符</td>
-<td><strong>rlshift</strong>、<strong>rrshift</strong>、<strong>rand</strong>、<strong>rxor</strong>、<strong>ror</strong></td>
+<td><code>__rlshift__、__rrshift__、__rand__、__rxor__、__ror__</code></td>
 </tr>
 <tr>
 <td>增量赋值位运算符</td>
-<td><strong>ilshift</strong>、<strong>irshift</strong>、<strong>iand</strong>、<strong>ixor</strong>、<strong>ior</strong></td>
+<td><code>__ilshift__、__irshift__、__iand__、__ixor__、__ior__</code></td>
 </tr>
 </tbody>
 </table>
