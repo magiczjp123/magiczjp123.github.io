@@ -98,25 +98,25 @@
 
 
 
-  <meta name="description" content="Fluent Python 第一章学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
+  <meta name="description" content="Fluent Python 学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
 <meta name="keywords" content="学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fluent Python学习笔记（一）">
-<meta property="og:url" content="http://yoursite.com/2019/03/20/fluent_python_note/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/09/03/fluent_python_note/index.html">
 <meta property="og:site_name" content="Junpu&#39;s Blog">
-<meta property="og:description" content="Fluent Python 第一章学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
+<meta property="og:description" content="Fluent Python 学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-21T06:40:58.770Z">
+<meta property="og:updated_time" content="2019-03-25T02:13:05.397Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fluent Python学习笔记（一）">
-<meta name="twitter:description" content="Fluent Python 第一章学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
+<meta name="twitter:description" content="Fluent Python 学习笔记从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/20/fluent_python_note/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/03/fluent_python_note/"/>
 
 
 
@@ -338,7 +338,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/20/fluent_python_note/"/>
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/fluent_python_note/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Junpu"/>
@@ -381,25 +381,9 @@
                 
               
 
-              <time title="Created: 2019-03-20 14:52:33" itemprop="dateCreated datePublished" datetime="2019-03-20T14:52:33+08:00">2019-03-20</time>
+              <time title="Created: 2018-09-03 14:52:33" itemprop="dateCreated datePublished" datetime="2018-09-03T14:52:33+08:00">2018-09-03</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-03-21 14:40:58" itemprop="dateModified" datetime="2019-03-21T14:40:58+08:00">2019-03-21</time>
-              
             
           </span>
 
@@ -432,7 +416,7 @@
       
 
       
-        <h3 id="Fluent-Python-第一章学习笔记"><a href="#Fluent-Python-第一章学习笔记" class="headerlink" title="Fluent Python 第一章学习笔记"></a>Fluent Python 第一章学习笔记</h3><p>从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。<a id="more"></a>Python解释器在遇到特定的句法式使用特殊方法去激活一些基本的对象操作。通常以<code>__</code>开头和结尾、例如<code>__getitem__</code>比如<code>obj[key]</code>实际调用的是<code>__getitem__</code>。对于<code>my_collection[key]</code>解释器实际上会调用<code>my_collection.__getitem__(key)</code>，这些方法称之为双下方法“dunder method”。<br>一个把句子转为单词列表的例子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Quote</span>:</span></span><br><span class="line">    quote = <span class="string">"An apple a day keeps the doctor away"</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self._quote = [word <span class="keyword">for</span> word <span class="keyword">in</span> self.quote]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self._quote)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, position)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self._quote[position]</span><br></pre></td></tr></table></figure></p>
+        <h3 id="Fluent-Python-学习笔记"><a href="#Fluent-Python-学习笔记" class="headerlink" title="Fluent Python 学习笔记"></a>Fluent Python 学习笔记</h3><p>从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。<a id="more"></a>Python解释器在遇到特定的句法式使用特殊方法去激活一些基本的对象操作。通常以<code>__</code>开头和结尾、例如<code>__getitem__</code>比如<code>obj[key]</code>实际调用的是<code>__getitem__</code>。对于<code>my_collection[key]</code>解释器实际上会调用<code>my_collection.__getitem__(key)</code>，这些方法称之为双下方法“dunder method”。<br>一个把句子转为单词列表的例子<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Quote</span>:</span></span><br><span class="line">    quote = <span class="string">"An apple a day keeps the doctor away"</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self._quote = [word <span class="keyword">for</span> word <span class="keyword">in</span> self.quote]</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> len(self._quote)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, position)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> self._quote[position]</span><br></pre></td></tr></table></figure></p>
 <p>因为实现了<code>__len__</code>所以可以调用len()获取我们的句子对象的长度。我们在类声明中把<code>__len__</code>的处理转交到了Python原生的数据模型List手上<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>len(my_quote)</span><br><span class="line"><span class="number">8</span></span><br></pre></td></tr></table></figure></p>
 <p>在我们的类中同样实现了<code>__getitem__</code>，（也是通过把<code>__getitem__</code>函数的处理转交给了List的<code>__getitem__</code>来处理）这带来了很多好处，可以原生地支持很多Python的操作<br>比如说做切片操作，甚至是利用Python的标准库，而不用重新造轮子，比如随机抽取的操作:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>my_quote[<span class="number">0</span>]</span><br><span class="line"><span class="string">'An'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>my_quote[<span class="number">4</span>:]</span><br><span class="line">[<span class="string">'keeps'</span>, <span class="string">'the'</span>, <span class="string">'doctor'</span>, <span class="string">'away'</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> random <span class="keyword">import</span> choice</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>choice(my_quote)</span><br><span class="line"><span class="string">'keeps'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>choice(my_quote)</span><br><span class="line"><span class="string">'the'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>choice(my_quote)</span><br><span class="line"><span class="string">'away'</span></span><br></pre></td></tr></table></figure></p>
 <p>同样的，因为实现了<code>__getitem__</code>，我们的句子同样可以迭代<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> word <span class="keyword">in</span> my_quote: </span><br><span class="line"><span class="meta">... </span>    print(word)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line">An</span><br><span class="line">apple</span><br><span class="line">a</span><br><span class="line">day</span><br><span class="line">keeps</span><br><span class="line">the</span><br><span class="line">doctor</span><br><span class="line">away</span><br></pre></td></tr></table></figure></p>
@@ -571,7 +555,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/construction/" rel="next" title="博客施工中---">
+              <a href="/2018/08/12/construction/" rel="next" title="博客施工中---">
                 <i class="fa fa-chevron-left"></i> 博客施工中---
               </a>
             
@@ -713,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Fluent-Python-第一章学习笔记"><span class="nav-number">1.</span> <span class="nav-text">Fluent Python 第一章学习笔记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Fluent-Python-学习笔记"><span class="nav-number">1.</span> <span class="nav-text">Fluent Python 学习笔记</span></a></li></ol></div>
             
 
           </div>
