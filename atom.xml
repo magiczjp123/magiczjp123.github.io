@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-25T02:13:05.397Z</updated>
+  <updated>2019-03-26T06:10:08.515Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,78 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/03/26/config/(theme)_config/"/>
+    <id>http://yoursite.com/2019/03/26/config/(theme)_config/</id>
+    <published>2019-03-26T06:10:08.515Z</published>
+    <updated>2019-03-26T06:10:08.515Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        null
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/03/26/config/(main)_config/"/>
+    <id>http://yoursite.com/2019/03/26/config/(main)_config/</id>
+    <published>2019-03-26T06:09:59.235Z</published>
+    <updated>2019-03-26T06:09:59.235Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        null
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>梯度下降优化算法总结</title>
+    <link href="http://yoursite.com/2019/03/25/gd-overview/"/>
+    <id>http://yoursite.com/2019/03/25/gd-overview/</id>
+    <published>2019-03-25T02:52:19.000Z</published>
+    <updated>2019-03-26T10:09:13.450Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- &lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt; --&gt;
+&lt;h2 id=&quot;梯度下降&quot;&gt;&lt;a href=&quot;#梯度下降&quot; class=&quot;headerlink&quot; title=&quot;梯度下降&quot;&gt;&lt;/a&gt;梯度下降&lt;/h2&gt;&lt;p&gt;梯度下降（Gradient descent）在深度学习中是常用的一种优化方法，在一些机器学习框架中（caffes、keras）中也提供对于梯度下降的优化，所以在这篇博文中对这些优化方法做出总结。
+    
+    </summary>
+    
+      <category term="机器学习" scheme="http://yoursite.com/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Fluent Python学习笔记（一）</title>
     <link href="http://yoursite.com/2018/09/03/fluent_python_note/"/>
     <id>http://yoursite.com/2018/09/03/fluent_python_note/</id>
     <published>2018-09-03T06:52:33.000Z</published>
-    <updated>2019-03-25T02:13:05.397Z</updated>
+    <updated>2019-03-25T02:53:55.409Z</updated>
     
     <summary type="html">
     
       &lt;h3 id=&quot;Fluent-Python-学习笔记&quot;&gt;&lt;a href=&quot;#Fluent-Python-学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Fluent Python 学习笔记&quot;&gt;&lt;/a&gt;Fluent Python 学习笔记&lt;/h3&gt;&lt;p&gt;从Python的数据模型上来理解Python语言，那些内置的数据模型的API为使用最地道的语言特性来构建自己的对象提供了工具。比如说有序列化、迭代器、函数、类和上下文管理器这些接口。
     
     </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
     
     
       <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
@@ -39,7 +100,7 @@
     <link href="http://yoursite.com/2018/08/12/construction/"/>
     <id>http://yoursite.com/2018/08/12/construction/</id>
     <published>2018-08-12T07:18:44.000Z</published>
-    <updated>2019-03-25T02:11:07.230Z</updated>
+    <updated>2019-03-25T02:55:32.767Z</updated>
     
     <summary type="html">
     
@@ -47,6 +108,8 @@
 &lt;p&gt;&lt;img src=&quot;https://github.com/magiczjp123/my_blog_imgs/raw/master/construction/under_construction.jpg&quot; width=&quot;400&quot; hegiht=&quot;240&quot; align=&quot;center&quot;&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
       <category term="工作" scheme="http://yoursite.com/tags/%E5%B7%A5%E4%BD%9C/"/>
@@ -58,13 +121,15 @@
     <link href="http://yoursite.com/2018/08/08/related/"/>
     <id>http://yoursite.com/2018/08/08/related/</id>
     <published>2018-08-08T06:57:54.000Z</published>
-    <updated>2019-03-18T03:49:36.574Z</updated>
+    <updated>2019-03-25T02:54:41.838Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;吉迈机器人资料汇总&lt;br&gt;&lt;a href=&quot;http://www.boocax.com/col.jsp?id=104&quot; title=&quot;资料&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;北京布科思技术支持资料网站&lt;/a&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
       <category term="工作" scheme="http://yoursite.com/tags/%E5%B7%A5%E4%BD%9C/"/>
@@ -76,13 +141,15 @@
     <link href="http://yoursite.com/2018/08/06/first-post/"/>
     <id>http://yoursite.com/2018/08/06/first-post/</id>
     <published>2018-08-06T06:42:28.000Z</published>
-    <updated>2019-03-25T02:10:47.434Z</updated>
+    <updated>2019-03-25T02:54:38.554Z</updated>
     
     <summary type="html">
     
       &lt;p&gt; 这篇文章主要记录下使用hexo在Github上部署静态网页的过程&lt;br&gt;
     
     </summary>
+    
+      <category term="工作" scheme="http://yoursite.com/categories/%E5%B7%A5%E4%BD%9C/"/>
     
     
       <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
