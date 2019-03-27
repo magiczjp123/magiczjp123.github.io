@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-26T06:10:08.515Z</updated>
+  <updated>2019-03-27T09:34:54.001Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,49 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/03/26/config/(theme)_config/"/>
-    <id>http://yoursite.com/2019/03/26/config/(theme)_config/</id>
-    <published>2019-03-26T06:10:08.515Z</published>
-    <updated>2019-03-26T06:10:08.515Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        null
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/03/26/config/(main)_config/"/>
-    <id>http://yoursite.com/2019/03/26/config/(main)_config/</id>
-    <published>2019-03-26T06:09:59.235Z</published>
-    <updated>2019-03-26T06:09:59.235Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        null
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>梯度下降优化算法总结</title>
-    <link href="http://yoursite.com/2019/03/25/gd-overview/"/>
-    <id>http://yoursite.com/2019/03/25/gd-overview/</id>
-    <published>2019-03-25T02:52:19.000Z</published>
-    <updated>2019-03-26T10:09:13.450Z</updated>
+    <link href="http://yoursite.com/2019/02/21/gd-overview/"/>
+    <id>http://yoursite.com/2019/02/21/gd-overview/</id>
+    <published>2019-02-21T02:52:19.000Z</published>
+    <updated>2019-03-27T09:34:54.001Z</updated>
     
     <summary type="html">
     
